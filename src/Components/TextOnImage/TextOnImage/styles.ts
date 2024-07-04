@@ -45,4 +45,8 @@ export const styles = StyleSheet.create({
     backgroundColor: 'green',
     borderRadius: 20,
   },
+  textSave: {
+    color: 'white',
+    fontSize: 20,
+  },
 });

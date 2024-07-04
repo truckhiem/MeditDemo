@@ -22,10 +22,12 @@ const usePickerHook = (maxImages: number) => {
           setImages(prevResults => [...prevResults, ...images]);
         }
       })
-      .catch(() => {
-        Alert.alert('', 'No Permission', [
-          {text: 'Go to settings', onPress: () => Linking.openSettings()},
-        ]);
+      .catch(e => {
+        if (e.code.includes('PERMISSION')) {
+          Alert.alert('', 'No Permission', [
+            {text: 'Go to settings', onPress: () => Linking.openSettings()},
+          ]);
+        }
       });
   };
 

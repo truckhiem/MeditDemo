@@ -124,7 +124,7 @@ export const TextOnImageUI = ({
         <Image source={Icons.ic_close} />
       </TouchableOpacity>
       <TouchableOpacity style={styles.saveContainer} onPress={onCapture}>
-        <Text>Save</Text>
+        <Text style={styles.textSave}>Save</Text>
       </TouchableOpacity>
     </View>
   );

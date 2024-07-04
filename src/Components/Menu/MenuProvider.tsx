@@ -44,7 +44,7 @@ export const MenuProvider: FC<{
               style={styles.button}
               onPress={() => onPressOption(option)}
               key={option.text}>
-              <Text>{option.text}</Text>
+              <Text style={styles.itemText}>{option.text}</Text>
             </TouchableOpacity>
           ))}
         </View>

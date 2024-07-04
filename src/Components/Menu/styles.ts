@@ -33,4 +33,8 @@ export const styles = StyleSheet.create({
     backgroundColor: 'white',
     padding: 10,
   },
+  itemText: {
+    color: 'black',
+    fontSize: 18,
+  },
 });
